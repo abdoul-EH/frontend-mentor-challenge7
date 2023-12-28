@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color:  hsl(0, 0%, 98%);
+    color: hsl(229, 6%, 66%);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .text{
+    width: 520px;
+    text-align: center;
+}
+
+.text .title{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.text .title span{
+
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+.content .box{
+    display: grid;
+    grid-template-columns: 420px 420px 420px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box div{
+    border-radius: 10px;
+}
+
+
+
+.box .one{
+    border:solid;
+    margin: 20px;
+    padding: 2rem;
+    border-width: 7px 0.1px 0.01px;
+    border-color: hsl(180, 62%, 55%) hsla(229, 6%, 66%, 0.248) hsla(229, 6%, 66%, 0.248);
+    box-shadow: 5px 5px 30px hsla(229, 6%, 66%, 0.248),-5px 5px 30px hsla(229, 6%, 66%, 0.248);
+
+
+}
+
+.box p{
+    margin-bottom:40px ;
+    font-weight: 400;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.one h3, .two .two-one h3, .two .two-two h3, .three h3{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+
+.box .two{
+    display: flex;
+    flex-direction: column; 
+}
+
+.two .two-one, .two .two-two{
+     border:solid;
+     margin:20px;
+     padding: 2rem;
+     border-width: 7px 0.1px 0.01px;
+}
+
+.two .two-one{
+    border-color: hsl(0, 78%, 62%) hsla(229, 6%, 66%, 0.248) hsla(229, 6%, 66%, 0.248);
+    box-shadow: 5px 5px 30px hsla(229, 6%, 66%, 0.248),-5px 5px 30px hsla(229, 6%, 66%, 0.248);
+
+}
+
+.two .two-two{
+    
+    border-color: hsl(34, 97%, 64%) hsla(229, 6%, 66%, 0.248) hsla(229, 6%, 66%, 0.248);
+    box-shadow: 5px 5px 30px hsla(229, 6%, 66%, 0.248),-5px 5px 30px hsla(229, 6%, 66%, 0.248);
+
+}
+
+.box .three{
+     border:solid;
+    margin: 20px;
+    padding: 2rem;
+    border-width: 7px 0.1px 0.01px;
+    border-color: hsl(212, 86%, 64%) hsla(229, 6%, 66%, 0.248) hsla(229, 6%, 66%, 0.248);
+    box-shadow: 5px 5px 30px hsla(229, 6%, 66%, 0.248),-5px 5px 30px hsla(229, 6%, 66%, 0.248);
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+    
+    .content .box{
+        grid-template-columns: 420px 420px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .content .box{
+        grid-template-columns: 420px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+        
+        .content .text{
+            width: 400px;
+        }
+        .text .title{
+            font-size: 30px;
+        }
+  }
+
+  @media screen and (max-width: 500px) {
+    
+    
+    .content .box{
+        grid-template-columns: 370px;
+    }
+
+    .content .text{
+        width: 300px;
+    }
+    .text .title{
+        font-size: 20px;
+    }
+}
